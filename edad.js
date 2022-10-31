@@ -1,6 +1,6 @@
 //1. dado un usuario con nombre y edad, determinar si puede beber alcohol o si puede empezar a recibir pensión
 
-const edad = 62
+const edad = 22
 
 if(edad >= 18){
     console.log('puedes beber')
