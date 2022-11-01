@@ -1,22 +1,5 @@
 //1. dado un usuario con nombre y edad, determinar si puede beber alcohol o si puede empezar a recibir pensión
 
-/*
-const promp = require("prompt-sync");
-
-const nombre = promp("cual es tu nombre?");
-console.log(nombre);
-
-const edad = promp("cuantos años tienes?");
-if(edad >= 18){
-    console.log('puedes beber')
-}
-else(console.log('eres un pinche menor'))
-if(edad >= 62){
-    console.log('y puedes empezar a recibir pensión')
-}
-*/
-
-
 const nombre = require("readline");
 const rl = nombre.createInterface({
     input: process.stdin,
@@ -35,14 +18,15 @@ const ed = edad.createInterface({
 });
 
 ed.question("cuantos años tienes?", function(answer){
+    
     console.log('como tu edad es ' + answer);
+    if(answer >= 18){
+        console.log('puedes beber alcohol')
+        }
+    else(console.log('eres un pinche menor'))
+    if(answer >= 62){
+        console.log('y puedes empezar a recibir pensión')
+        }
     ed.close();
 });
 
-if(edad >= 18){
-    console.log('puedes beber')
-    }
-else(console.log('eres un pinche menor'))
-if(edad >= 62){
-    console.log('y puedes empezar a recibir pensión')
-    }
