@@ -9,6 +9,19 @@ const rl = nombre.createInterface({
 rl.question("cual es tu nombre?", function(answer){
     console.log(answer);
     rl.close();
+
+    ed.question("cuantos años tienes?", function(answer){
+    
+        console.log('como tu edad es ' + answer);
+        if(answer >= 18){
+            console.log('puedes beber alcohol')
+            }
+        else(console.log('eres un pinche menor'))
+        if(answer >= 62){
+            console.log('y puedes empezar a recibir pensión')
+            }
+        ed.close();
+    });
 });
 
 const edad = require("readline");
@@ -17,16 +30,4 @@ const ed = edad.createInterface({
     output: process.stdout,
 });
 
-ed.question("cuantos años tienes?", function(answer){
-    
-    console.log('como tu edad es ' + answer);
-    if(answer >= 18){
-        console.log('puedes beber alcohol')
-        }
-    else(console.log('eres un pinche menor'))
-    if(answer >= 62){
-        console.log('y puedes empezar a recibir pensión')
-        }
-    ed.close();
-});
 
