@@ -26,3 +26,4 @@ country.question('choose your country : Colombia, Perú, Bolivia, Argentina: ', 
     country.close();
 });
 
+// estudiar switch

@@ -1,4 +1,9 @@
 //1. dado un usuario con nombre y edad, determinar si puede beber alcohol o si puede empezar a recibir pensión
+const edad = require("readline");
+const ed = edad.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
 
 const nombre = require("readline");
 const rl = nombre.createInterface({
@@ -16,7 +21,7 @@ rl.question("cual es tu nombre?", function(answer){
         if(answer >= 18){
             console.log('puedes beber alcohol')
             }
-        else(console.log('eres un pinche menor'))
+        else console.log('eres un pinche menor');
         if(answer >= 62){
             console.log('y puedes empezar a recibir pensión')
             }
@@ -24,10 +29,5 @@ rl.question("cual es tu nombre?", function(answer){
     });
 });
 
-const edad = require("readline");
-const ed = edad.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-});
 
-
+//estudiar else if
