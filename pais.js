@@ -8,22 +8,24 @@ const country = readLine.createInterface({
 });
 
 country.question('choose your country : Colombia, Perú, Bolivia, Argentina: ', function(answer){
-    async() =>{
-        if(answer === 'colombia'){
-            console.log(name + ' you are colombiano')
+  
+        if(answer == 'colombia'){
+            console.log(name + ' you are colombian')
         }
-        if(answer === 'peru'){
+        else if(answer == 'peru'){
             console.log(name + ' you are peruano')
         }
-        if(answer === 'bolivia'){
+        else if(answer == 'bolivia'){
             console.log(name + ' you are boliviano')
         }
-        if(answer === 'argentina'){
+        else if(answer == 'argentina'){
             console.log(name + ' you are argentino')
         }
-    }
-    console.log('country not avialable')
+        else console.log('country not avialable');
+        
+    
     country.close();
 });
+
 
 // estudiar switch
