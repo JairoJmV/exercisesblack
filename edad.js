@@ -20,15 +20,14 @@ const ed = edad.createInterface({
     });
 */
 
-const edad = 61;
+const edad = 68;
 
-if(edad => 62){
-    console.log('puedes beber alcohol y recibir pensión');
-} 
-else if(edad => 18){
-console.groupCollapsed('puedes beber alcohol');
+if (edad => 18){
+    console.log('puedes beber')
+}
+else if(edad => 62){
+    console.log('puedes beber y recibir pensión')
 }
 else console.log('contenido no disponible');
-
 
 //estudiar else if
