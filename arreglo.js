@@ -1,8 +1,10 @@
 const arreglo = [0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0]
-const valor = 0
+let numUno = 0
+let numCero = 1
 
 for (let index = 0; index < arreglo.length; index++) {
-    valor[index] = valor[index - 2] + valor[index - 1];
+    numUno = numUno + arreglo[index];
+    numCero = numCero + arreglo[index];
 }
-
-console.log(arreglo.values[0])
+console.log(numUno);
+console.log(numCero)
