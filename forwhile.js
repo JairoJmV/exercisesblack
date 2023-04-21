@@ -3,8 +3,7 @@ const caracter = 3;
 let mul = '*';
 
 for (let index = 0; index <= caracter; index++) {
-    if (index === caracter) {
-        mul + mul;
-    }
+    if (index < caracter) {
+        console.log(mul);
+    } 
 };
-console.log(mul);
