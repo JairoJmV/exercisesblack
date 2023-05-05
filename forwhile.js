@@ -1,9 +1,9 @@
 // ex: const = 3 imprimir */**//***///
-const caracter = 3;
-let mul = '*';
+const caracter = 7;
+let mul = ' ';
 
 for (let index = 0; index <= caracter; index++) {
-    if (index < caracter) {
-        console.log(mul);
-    } 
+        mul = mul + new Array(index).fill('*').join('');
+        mul = mul + new Array(index).fill('/').join('');
 };
+console.log(mul);
